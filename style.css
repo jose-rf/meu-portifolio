@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.barraDeNavegacao {
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.2s ease-in-out;
+}
+
+.barraDeNavegacao ul {
+    list-style: none;
+    display: flex;
+}
+
+.barraDeNavegacao li {
+    padding: 1%;
+    margin-right: 20px;
+}
+
+.barraDeNavegacao a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white; 
+}
+
+.barraDeNavegacao li {
+    white-space: nowrap; 
+    border-radius: 16px;
+    border-bottom:3px solid rgba(255, 152, 67, 1) ;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li:hover{
+    background-color: rgba(194, 194, 194, 0.155);
+    transform: scale(1.1); 
+    
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.texto {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tituloParte1{
+    color: white;
+}
+.tituloParte2{
+    color:rgba(255, 152, 67, 1);
+}
+
+.codigo1, .codigo2{
+    color: white;
+}
+
+.texto p {
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+
+}
+
+.curriculoBotao {
+    display: flex;
+    width: 126px;
+    height: 30px;
+    padding: 2px;
+    text-decoration: none;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 7%;
+    border-radius: 16px;
+    color: rgba(255, 152, 67, 1);
+    border: 3px solid rgba(255, 152, 67, 1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.curriculoBotao:hover{
+    background-color: rgba(194, 194, 194, 0.155);
+    transform: scale(1.1); 
+}
+
+.imagemPerfil{
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.imagemPerfil:hover{
+    transform: scale(1.05); 
+}
+
+.redesSociais{
+    width: 100%;
+    height: 122px;
+    margin-top: 60px;
+}
+
+.redesSociais, p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.mensagem{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.destaqueRedes1{
+    color: white;
+}
+
+.destaqueRedes2{
+   color: rgba(255, 152, 67, 1);
+}
+
+.linkLekedIn, .linkGitHub{
+    display: inline-flex; 
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.linkLekedIn:hover, .linkGitHub:hover{
+    transform: scale(1.1); 
+}
+
+footer{
+    display: flex;
+    background-color: rgba(255, 152, 67, 1) ;
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato, .autor, .direitos{
+    color: white;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+}
