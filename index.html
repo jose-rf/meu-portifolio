@@ -6,15 +6,28 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="/img/Ellipse 1.svg" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;
-500&family=Montserrat:wght@600&family=Poppins:ital,wght@0,200;1,500&display
-=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600&family=Poppins:ital,wght@0,200;1,500&display=swap" 
+    rel="stylesheet">
+    <script src="script.js"></script>
     <title>Meu Portifólio</title>
 </head>
 <body>
     <header>
-        <div class="barraDeNavegacao">
+        <div class="menu">
+             <img src="/img/menu_white_24dp.svg" alt="" class="icone" onclick="clickMenu()">
+            <div class="barraDeNavegacao">
+            <ul id="itens" >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Conecte-se Comigo</a></li>
+                <li><a href="#">Meus projetos</a></li>
+                <li><a href="#">Meu Currículo</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="menu-popup" onclick="fecharMenu()">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sobre mim</a></li>
@@ -23,6 +36,8 @@
                 <li><a href="#">Meu Currículo</a></li>
             </ul>
         </div>
+        
+        
     </header>
 
     <div class="main">
@@ -37,7 +52,7 @@
                 Oie! sou o José Rodrigues, estudante de Sistemas 
                 de Informação na Universidade do Estado de Minas Gerais e 
                 desenvolvedor Front-end e UI/UX Designer, possuo experiência
-                 com HTML, CSS e JavaScrip, sou completamente apaixonado pela
+                 com <span class="linguagensQueTiveContato">HTML, CSS e JavaScrip</span>, sou completamente apaixonado pela
                   área da tecnologia e descobrir coisas novas! venha conhecer
                    um pouco mais da minha jornada!
             </p>
@@ -51,7 +66,7 @@
         </div>
 
              <div class="imagemPerfil">
-                 <img src="img/Ellipse 1.svg" alt="imagem josé">
+                 <img src="img/Ellipse 1.svg" alt="imagem josé" class="imgProfile">
             </div>
     </div>
         <div class="redesSociais">
