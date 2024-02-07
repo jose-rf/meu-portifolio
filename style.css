@@ -9,16 +9,23 @@
     text-decoration: none;
 }
 
+:root{
+    --cor-primaria: black;
+    --cor-secundaria: rgba(255, 152, 67, 1);
+    --cor-terciaria: white;
+
+}
+
 body {
-    background-color: black;
+    background-color:  var(--cor-primaria);
     font-size: 100%;
 }
 
 
 .barraDeNavegacao {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-primaria);
     width: 100%;
-    height: 80px;
+    height: 5rem;
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -41,13 +48,14 @@ body {
 .barraDeNavegacao a {
     text-decoration: none;
     font-family: 'Krona One', sans-serif;
-    color: white; 
+    color: var(--cor-terciaria);
+    font-size: 0.8rem;
 }
 
 .barraDeNavegacao li {
     white-space: nowrap; 
     border-radius: 16px;
-    border-bottom:3px solid rgba(255, 152, 67, 1) ;
+    border-bottom:3px solid var(--cor-secundaria) ;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -63,48 +71,53 @@ li:hover{
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+    padding: 0 2rem;
+    gap: 5rem;
 }
 
 .texto {
-    width: 600px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center; 
     font-family: 'Montserrat', sans-serif;
+    margin-left: 4rem;
 }
 
 .titulo{
     font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
 }
 
 .tituloParte2{
-    color:rgba(255, 152, 67, 1);
+    color:var(--cor-secundaria);
 }
 
 .codigo1, .codigo2,.tituloParte1{
-    color: white;
+    color: var(--cor-terciaria);
 }
 
 .texto p {
     margin-top: 5%;
-    color: white;
+    color: var(--cor-terciaria);
     text-align: center;
-
+    line-height: 2.5rem;
 }
 
 .curriculoBotao {
     display: flex;
-    width: 160px;
-    height: 40px;
-    font-size: 13px;
-    padding: 21px;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.81rem;
+    padding: 1.31rem;
     text-decoration: none;
     align-items: center; 
     justify-content: center;
     margin-top: 7%;
     border-radius: 16px;
-    color: rgba(255, 152, 67, 1);
-    border: 3px solid rgba(255, 152, 67, 1);
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
     transition: transform 0.2s ease-in-out;
     font-family: 'Krona One', sans-serif;
 }
@@ -115,10 +128,12 @@ li:hover{
 }
 
 .imagemPerfil{
-    display: flex;
-    width: 100%;
-    max-width: 280px;
+    width: 50%;
+    max-width: 18.75rem;
+    height: auto;
     transition: transform 0.2s ease-in-out;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 .imagemPerfil:hover{
@@ -127,32 +142,32 @@ li:hover{
 
 .redesSociais{
     width: 100%;
-    height: 122px;
-    margin-top: 60px;
+    height: 7.65rem;
+    margin-top: 3.75rem;
     font-family: 'Krona One', sans-serif;
 }
 
 .redesSociais, p{
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
 }
 
 .mensagem{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .destaqueRedes1{
-    color: white;
+    color: var(--cor-terciaria);
 }
 
 .destaqueRedes2, .linguagensQueTiveContato{
-   color: rgba(255, 152, 67, 1);
+   color: var(--cor-secundaria);
 }
 
 .linkLekedIn, .linkGitHub, .instagram{
     display: inline-flex; 
-    margin-left: 10px;
+    margin-left: 0.625rem;
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease-in-out;
@@ -164,8 +179,8 @@ li:hover{
 
 footer{
     display: flex;
-    background-color: rgba(255, 152, 67, 1) ;
-    margin-top: 50px;
+    background-color: var(--cor-secundaria) ;
+    margin-top: 3.125rem;
     width: 100%;
     height: 80px;
     justify-content: center;
@@ -173,21 +188,27 @@ footer{
 }
 
 .email, .autor, .direitos{
-    color: white;
+    color: var(--cor-terciaria);
     display: flex;
-    font-size: 14px;
+    font-size: 0.875rem;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 671px) {
+
+    body{
+        font-size: 1.5rem;
+    }
+
+
     .menu-popup{
         display: none;
     }
     }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
     
     .barraDeNavegacao {
         display: none;
@@ -198,7 +219,7 @@ footer{
         position: fixed;
         top: 0;
         width: 100%;
-        height: 35px;
+        height: 2.19rem;
         background-color: black;
     }
 
@@ -208,9 +229,10 @@ footer{
         width: 100%;
         text-align: center;
         background-color: rgba(255, 152, 67, 1);
-        padding: 20px;
+        padding: 1.25rem;
         box-sizing: border-box;
         border-radius: 16px;
+        margin-top: 1.25rem;
     }
     
     .menu-popup ul {
@@ -228,7 +250,7 @@ footer{
         text-decoration: none;
         font-family: 'Krona One', sans-serif;
         color: white;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     
     .menu-popup.active {
@@ -237,44 +259,45 @@ footer{
     
 
     .icone{
-        margin-left: 5%;
+        margin-left: 8%;
     }
 
     .main{
         flex-direction: column;
-        margin-top: 10%;
-        padding-top: 35px;
+        margin-top: 5%;
+        padding-top: 2.19rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
 
     .imagemPerfil, .imgProfile{
         order: -1;
         width: 100%;
-        max-width: 152px;
-        margin-bottom: 20px;
+        max-width: 13rem;
+        margin-bottom: 1.25rem;
     }
 
     .texto{
         order: 3;
         width: 100%;
-        max-width: 600px;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 0.625rem;
     }
 
     .titulo{
-        font-size: 80%;
+        font-size: 1rem;
     }
 
     p{
-        font-size: 80%;
+        font-size: 0.9rem;
     }
 
     .curriculoBotao{
         display: flex;
         width: 100%;
-        max-width: 100px;
-        font-size: 10px;
+        max-width: 6.25rem;
+        font-size: 0.625rem;
         text-align: center;
     }
 
@@ -289,12 +312,12 @@ footer{
 
     .redesSociais{
         width: 100%;
-        font-size: 90%;
+        font-size: 0.9rem;
     }
 
     .linkedinImg, .githubImg, .instagramImg{
         width: 100%;
-        max-width: 42px;
+        max-width: 2.625rem;
     }
 
     footer{
@@ -302,7 +325,7 @@ footer{
     }
 
     .email,.autor,.direitos{
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
     
