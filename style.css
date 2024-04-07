@@ -2,7 +2,7 @@
 
 *, 
 *:after,
-*:before {
+*:before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +49,7 @@ body {
     text-decoration: none;
     font-family: 'Krona One', sans-serif;
     color: var(--cor-terciaria);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .barraDeNavegacao li {
@@ -195,6 +195,77 @@ footer{
     font-family: 'Montserrat', sans-serif;
 }
 
+.textotitulo{
+    margin-top: 5rem;
+    color: var(--cor-terciaria);
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+}
+
+.tituloDaPagina, .titulosProjetos{
+    color: var(--cor-secundaria);
+}
+
+.mainProjects{
+    margin-top: 3rem;
+}
+
+.projectOne, .projectTwo, .projectThree {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+.classeDeTextos, .classeDeTextosDois, .classeDeTextosTres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetoAlura, .projetoRocketseat, .projetoJogoNumeroSecreto {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.alura, .rocketseat, .jogonumerosecreto {
+    font-size: 1.2rem;
+    color: var(--cor-terciaria);
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.textAluraMain, .textRocketSeat, .textJogoDoNumero {
+    color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+.botaoAcessar {
+    display: flex;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.81rem;
+    padding: 1.31rem;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 16px;
+    color: var(--cor-secundaria);
+    border: 3px solid var(--cor-secundaria);
+    transition: transform 0.2s ease-in-out;
+    font-family: 'Krona One', sans-serif;
+}
+
+.botaoAcessar:hover {
+    background-color: rgba(194, 194, 194, 0.155);
+    transform: scale(1.1);
+}
 @media only screen and (min-width: 671px) {
 
     body{
@@ -335,6 +406,56 @@ footer{
         font-size: 0.5rem;
     }
 
+
+
+    .textotitulo {
+        margin-top: 3rem;
+        font-size: 1rem;
+    }
     
+    .mainProjects {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .classeDeTextos {
+        display: flex;
+    }
+    
+    .alura, .rocketseat, .jogonumerosecreto {
+        font-size: 1rem;
+        order: 1;
+    }
+    
+    .projetoAlura, .projetoRocketseat, .projetoJogoNumeroSecreto {
+        width: 250px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        order: 2;
+    }
+    
+    .textAluraMain, .textRocketSeat, .textJogoDoNumero {
+        order: 3;
+        margin-left: 1rem; 
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botaoAcessar{
+        order: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+
+   
+
+
+
 
 }
