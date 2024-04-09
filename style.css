@@ -425,6 +425,10 @@ footer{
         font-size: 0.5rem;
     }
 
+    .textAluraMain, .textRocketSeat, .textJogoDoNumero {
+        padding: 0 0 0 0;
+    }
+
 
 
     .textotitulo {
