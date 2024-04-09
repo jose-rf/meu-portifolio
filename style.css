@@ -17,8 +17,22 @@
 }
 
 body {
-    background-color:  var(--cor-primaria);
+    position: relative; /* Tornar o corpo relativo para que o pseudo-elemento seja posicionado corretamente */
+    background-color: var(--cor-primaria);
     font-size: 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/vecteezy_white-and-black-paper-grid-background_10742856.svg);
+    background-size: cover;
+    opacity: 0.2; 
+    background-attachment: fixed;
 }
 
 
@@ -49,7 +63,7 @@ body {
     text-decoration: none;
     font-family: 'Krona One', sans-serif;
     color: var(--cor-terciaria);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .barraDeNavegacao li {
@@ -173,6 +187,10 @@ li:hover{
     transition: transform 0.2s ease-in-out;
 }
 
+.linkedinImg, .instagramImg, .githubImg{
+    width: 3rem;
+}
+
 .linkLekedIn:hover, .linkGitHub:hover, .instagram:hover{
     transform: scale(1.1); 
 }
@@ -242,13 +260,14 @@ footer{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     margin-top: 1rem;
+    padding: 0 8rem 0 8rem;
 }
 
 
 .botaoAcessar {
     display: flex;
-    width: 10rem;
-    height: 2.5rem;
+    width: 8rem;
+    height: 2rem;
     font-size: 0.81rem;
     padding: 1.31rem;
     text-decoration: none;
@@ -266,7 +285,7 @@ footer{
     background-color: rgba(194, 194, 194, 0.155);
     transform: scale(1.1);
 }
-@media only screen and (min-width: 671px) {
+@media only screen and (min-width: 875px) {
 
     body{
         font-size: 1.5rem;
@@ -279,7 +298,7 @@ footer{
     }
 
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 875px) {
     
     .barraDeNavegacao {
         display: none;
